@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cable_ready-element (5.0.0)
+    cable_ready-element (5.0.0.pre9)
       actionpack (>= 5.2)
       actionview (>= 5.2)
       activesupport (>= 5.2)
@@ -93,6 +93,7 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
+    magic_frozen_string_literal (1.2.0)
     mail (2.8.0)
       mini_mime (>= 0.1.1)
       net-imap
@@ -199,6 +200,7 @@ PLATFORMS
 
 DEPENDENCIES
   cable_ready-element!
+  magic_frozen_string_literal
   rails (~> 6.1)
   rake
   standard (= 1.19.1)

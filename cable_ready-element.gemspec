@@ -29,6 +29,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "cable_ready", ">= 5.0.0.pre9"
   gem.add_dependency "railties", rails_version
 
+  gem.add_development_dependency "magic_frozen_string_literal"
   gem.add_development_dependency "rake"
   gem.add_development_dependency "standard", "1.19.1"
   gem.add_development_dependency "standardrb"
