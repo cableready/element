@@ -37,6 +37,16 @@ pin '@cable_ready/element', to: 'cable_ready-element.min.js', preload: true
 <%= javascript_include_tag "cable_ready-element.umd.min.js", "data-turbo-track": "reload" %>
 ```
 
+### Installing the element
+
+Within your `application.js` import the `@cable_ready/element` package:
+
+```js
+// app/javascript/application.js
+
+import "@cable_ready/element"
+```
+
 ## Contributing
 
 ### Code of Conduct
