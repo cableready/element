@@ -1,0 +1,39 @@
+{
+  "name": "@cable_ready/element",
+  "version": "5.0.0",
+  "description": "CableReady helps you create great real-time user experiences by making it simple to trigger client-side DOM changes from server-side Ruby.",
+  "homepage": "https://cableready.stimulusreflex.com/",
+  "repository": "https://github.com/cableready/element",
+  "bugs": "https://github.com/cableready/element/issues",
+  "license": "MIT",
+  "author": "Nathan Hopkins <natehop@gmail.com>",
+  "main": "./dist/cable_ready-element.umd.min.js",
+  "module": "./dist/cable_ready-element.min.js",
+  "files": [
+    "dist/*",
+    "javascript/*"
+  ],
+  "scripts": {
+    "lint": "yarn run prettier-standard:check",
+    "format": "yarn run prettier-standard:format",
+    "prettier-standard:check": "yarn run prettier-standard --check ./javascript/**/*.js rollup.config.js",
+    "prettier-standard:format": "yarn run prettier-standard ./javascript/**/*.js rollup.config.js",
+    "build": "yarn rollup -c",
+    "watch": "yarn rollup -wc"
+  },
+  "dependencies": {
+    "cable_ready": "^5.0.0-pre9"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@web/dev-server-esbuild": "^0.3.2",
+    "@web/dev-server-rollup": "^0.3.19",
+    "@web/test-runner": "^0.14.0",
+    "prettier-standard": "^16.4.1",
+    "rollup": "^2.70.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "sinon": "^10.0.0"
+  }
+}
