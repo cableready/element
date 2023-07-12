@@ -2,6 +2,6 @@
 
 module CableReady
   module Element
-    VERSION = "5.0.0.pre9"
+    VERSION = "5.0.0"
   end
 end
