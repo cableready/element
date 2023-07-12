@@ -9,13 +9,12 @@ jobs:
     name: Prettier-Standard Check Action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '12'
+          node-version: '18'
           cache: 'yarn'
-      - run: yarn
-        working-directory: javascript/
+
+      - run: yarn install
       - run: yarn lint
-        working-directory: javascript/
