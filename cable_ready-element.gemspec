@@ -26,7 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "actionpack", rails_version
   gem.add_dependency "actionview", rails_version
   gem.add_dependency "activesupport", rails_version
-  gem.add_dependency "cable_ready", ">= 5.0.0.pre9"
+  gem.add_dependency "cable_ready", "~> 5.0.0"
   gem.add_dependency "railties", rails_version
 
   gem.add_development_dependency "magic_frozen_string_literal"

@@ -22,7 +22,7 @@
     "watch": "yarn rollup -wc"
   },
   "dependencies": {
-    "cable_ready": "^5.0.0-pre9"
+    "cable_ready": "^5.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.3",
